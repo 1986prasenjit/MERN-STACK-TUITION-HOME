@@ -1,0 +1,10 @@
+.grandParent{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+.parent{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}

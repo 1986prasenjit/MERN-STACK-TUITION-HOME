@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header
+      class="flex items-center justify-around w-full h-16 bg-transparent fixed z-10"
+    >
+      <nav class="hidden sm:flex items-center justify-content-center gap-4">
+        <div class="placeDiv">
+          <li class="relative w-full">
+            <a
+              href="#"
+              class="uppercase text-md font-semibold font-sans text-white"
+              >other places</a
+            >
+          </li>
+          <div
+            class="absolute top-16 left-0 bg-black w-full pt-8 pb-14 px-2 placesBox"
+          >
+            <div class="max-w-4xl w-full h-full grid grid-cols-5 gap-3 m-auto">
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/mountain-hotel-home-1-370x462.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Mountain Hotel</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/div.elementor-widget-container.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Island Resort</p>
+              </div>
+
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/apartment-home-370x462.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">City Aparthotel</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/div.elementor-widget-container (1).png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Countryside Lodge</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/div.elementor-widget-container (2).png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Mountain Chalet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stayDiv">
+          <li class="relative">
+            <a
+              href="#"
+              class="uppercase text-md font-semibold font-sans text-white"
+              >stay</a
+            >
+            <div
+              class="absolute bg-black max-w-xs w-57.5 top-10 flex flex-col gap-2 p-5 stayBox"
+            >
+              <p class="text-xs text-white font-medium cursor-pointer">
+                Rooms & Suites
+              </p>
+              <p class="text-xs text-white font-medium cursor-pointer">
+                Room Details – Top Image
+              </p>
+              <p class="text-xs text-white font-medium cursor-pointer">
+                Room Details – Top Gallery
+              </p>
+              <p class="text-xs text-white font-medium cursor-pointer">
+                Room Details – Left Booking Form
+              </p>
+              <p class="text-xs text-white font-medium cursor-pointer">Cart</p>
+              <p class="text-xs text-white font-medium cursor-pointer">
+                Checkout
+              </p>
+              <p class="text-xs text-white font-medium cursor-pointer">
+                My account
+              </p>
+            </div>
+          </li>
+        </div>
+        <div class="dineDiv">
+          <li class="relative w-full">
+            <a
+              href="#"
+              class="uppercase text-md font-semibold font-sans text-white"
+              >Dine</a
+            >
+          </li>
+          <div
+            class="absolute top-16 left-0 bg-black w-full pt-8 pb-14 px-2 dineBox"
+          >
+            <div class="max-w-4xl w-full h-full grid grid-cols-6 gap-3 m-auto">
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/luana-niemann-uArnumExMcY-unsplash-300x300.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Overview</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/coralline-clin-gmCAsHRSJHE-unsplash-300x300.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">The Restaurant</p>
+              </div>
+
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/pylyp-sukhenko-xyIEfcjM3ew-unsplash-300x300.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Lobby Cafe</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/ali-choubin-w8mIVxpGIRI-unsplash-300x300.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Rooftop Bar</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/nerfee-mirandilla-UgKVWZuCxCk-unsplash-300x300.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Steakhouse</p>
+              </div>
+              <div class="w-full h-full text-white text-center cursor-pointer">
+                <img
+                  src="./images/sasha-stories-qzt0DKKG8Pc-unsplash-300x300.jpg.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+                <p class="uppercase text-xs mt-2">Cigar Lounge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="playDiv">
+          <li class="relative">
+            <a
+              href="#"
+              class="uppercase text-md font-semibold font-sans text-white"
+              >play</a
+            >
+          </li>
+          <div
+            class="absolute top-16 left-0 bg-black w-full pt-8 pb-14 px-2 text-white playBox"
+          >
+            <div
+              class="max-w-5xl w-full h-full flex justify-between items-center gap-3 m-auto"
+            >
+              <div class="grid grid-cols-2 gap-3 w-1/2">
+                <div class="flex flex-col gap-3">
+                  <p class="uppercase text-sm font-medium mb-2">
+                    Local Activities
+                  </p>
+                  <p class="text-xs">Overview</p>
+                  <p class="text-xs">Winter Activities</p>
+                  <p class="text-xs">Summer Activities</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="uppercase text-sm font-medium mb-2">
+                    Summer Activities
+                  </p>
+                  <p class="text-xs">Hiking</p>
+                  <p class="text-xs">Running & Walking</p>
+                  <p class="text-xs">Mountain Bike</p>
+                  <p class="text-xs">Racing Bike</p>
+                  <p class="text-xs">Golf Courses</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <p class="uppercase text-sm font-medium mb-2">
+                    Winter Activities
+                  </p>
+                  <p class="text-xs">Ski & Snowboard</p>
+                  <p class="text-xs">Freeriding</p>
+                  <p class="text-xs">Winter Hiking</p>
+                  <p class="text-xs">Snowshoeing</p>
+                  <p class="text-xs">Paraglider Exercises</p>
+                  <p class="text-xs">Sledding</p>
+                </div>
+                <div class="flex flex-col gap-3 justify-center">
+                  <p class="uppercase text-sm font-medium mb-2">Others</p>
+                  <p class="text-xs">Art & Museum</p>
+                  <p class="text-xs">Musics</p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-2 w-1/2">
+                <div class="w-full h-72 md:h-96 cursor-pointer">
+                  <img
+                    src="./images/Component 6.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="w-full h-72 md:h-96 cursor-pointer">
+                  <img
+                    src="./images/div.cs-cta-wrap.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="uppercase text-md font-semibold font-sans text-white"
+          >relax</a
+        >
+      </nav>
+      <h1 class="font-light font-[Marcellus] text-3xl uppercase text-white">
+        cozystay
+      </h1>
+      <button
+        class="uppercase text-xs font-semibold font-sans border border-white px-6 py-3 text-white"
+      >
+        reserve now
+      </button>
+    </header>
+    <main class="w-full h-full">
+      <div class="bg-yellow-500 w-full h-screen relative z-0">
+        <img
+          src="./images/heroImg.jpeg"
+          alt=""
+          srcset=""
+          class="w-full h-full"
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-center items-center text-white"
+        >
+          <p class="text-[10px] sm:text-xs uppercase font-medium text-center">
+            Boutique resort offering timeless European luxury
+          </p>
+          <h2
+            class="uppercase text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-light font-[Marcellus] text-center mt-6"
+          >
+            Boutique Resort in the <br />
+            Heart of Swiss Alps
+          </h2>
+          <div
+            class="flex justify-center items-center gap-10 sm:gap-14 md:gap-20 py-4 sm:py-6 md:py-10 w-full"
+          >
+            <div class="text-center">
+              <p
+                class="font-light font-[Marcellus] text-xl sm:text-2xl md:text-3xl"
+              >
+                1200M
+              </p>
+              <p
+                class="font-medium opacity-80 text-[10px] sm:text-xs md:text-sm text-[#EEEEEE]"
+              >
+                Lowest Altitude
+              </p>
+            </div>
+            <div class="text-center">
+              <p
+                class="font-light font-[Marcellus] text-xl sm:text-2xl md:text-3xl"
+              >
+                2418M
+              </p>
+              <p
+                class="font-medium opacity-80 text-[10px] sm:text-xs md:text-sm text-[#EEEEEE]"
+              >
+                Highest Altitude
+              </p>
+            </div>
+            <div class="text-center">
+              <p
+                class="font-light font-[Marcellus] text-xl sm:text-2xl md:text-3xl"
+              >
+                50KM
+              </p>
+              <p
+                class="font-medium opacity-80 text-[10px] sm:text-xs md:text-sm text-[#EEEEEE]"
+              >
+                Slopes
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full text-center sm:w-3/4 m-auto mt-10 px-2">
+        <p
+          class="font-medium text-[10px] sm:text-xs md:text-sm text-[#B99D75] mb-3"
+        >
+          Swiss Heritage Meets Modern Luxury
+        </p>
+        <p class="text-base sm:text-xl md:text-3xl font-[Marcellus] font-light">
+          CozyStay in the heart of the mountains is an architectural masterpiece
+          offering contemporary accommodations with unrivalled ski and hiking
+          trails.
+        </p>
+      </div>
+      <div
+        class="w-full h-87.5 flex justify-between items-center mt-10 relative"
+      >
+        <div
+          class="absolute left-6 bg-white w-9 h-9 rounded-full flex justify-center items-center cursor-pointer"
+        >
+          <img src="./images/prevIcon.png" alt="" class="w-5 h-5" />
+        </div>
+        <div class="flex-2 w-full h-full" id="slider">
+          <img
+            src="./images/sliderImg1.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="flex-2 w-full h-full active" id="slider">
+          <img
+            src="./images/sliderImg2.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="flex-2 w-full h-full" id="slider">
+          <img
+            src="./images/sliderImg3.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="absolute right-6 bg-white w-9 h-9 rounded-full flex justify-center items-center cursor-pointer"
+        >
+          <img src="./images/nextIcon.png" alt="" class="w-5 h-5" />
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <p
+          class="font-medium text-[10px] sm:text-xs md:text-sm text-[#B99D75] mb-3"
+        >
+          Enjoy Ultimate Alpine Experiences
+        </p>
+        <p
+          class="uppercase text-base sm:text-xl md:text-3xl font-[Marcellus] font-light"
+        >
+          Your Holiday Paradise
+        </p>
+        <div class="cardGridContainer max-w-6xl m-auto">
+          <div class="w-full h-100 px-2">
+            <div class="w-full h-95 cursor-pointer">
+              <img src="./images/cardImg1.png" alt="" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="w-full h-100 px-2 flex justify-end items-end">
+            <div class="w-full h-95 cursor-pointer">
+              <img src="./images/cardImg2.png" alt="" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="w-full h-100 px-2">
+            <div class="w-full h-95 cursor-pointer">
+              <img src="./images/cardImg3.png" alt="" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="w-full h-100 px-2 flex justify-end items-end">
+            <div class="w-full h-95 cursor-pointer">
+              <img src="./images/cardImg4.png" alt="" class="w-full h-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex justify-between items-start mt-10 px-2.5 serviceGridContainer"
+      >
+        <div>
+          <p
+            class="font-medium text-[10px] sm:text-xs md:text-sm text-[#B99D75] mb-3"
+          >
+            Discover the Services we offered
+          </p>
+          <p
+            class="uppercase text-base sm:text-xl md:text-3xl font-[Marcellus] font-light"
+          >
+            The Essentials
+          </p>
+          <div class="grid grid-cols-2 mt-5 gap-3 serviceTextGridContainer">
+            <div class="flex gap-3 items-start">
+              <div class="w-10 h-8">
+                <img src="./images/icon1.png" alt="" class="w-full h-full" />
+              </div>
+              <div>
+                <p class="text-sm md:text-base font-light font-[Marcellus]">
+                  Airport Pick-up Service
+                </p>
+                <p class="font-light text-xs md:text-sm">
+                  Lorem ipsum proin gravida velit auctor sde re sit amet space.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 items-start">
+              <div class="w-10 h-8">
+                <img src="./images/icon6.png" alt="" class="w-full h-full" />
+              </div>
+              <div>
+                <p class="text-sm md:text-base font-light font-[Marcellus]">
+                  Housekeeper Services
+                </p>
+                <p class="font-light text-xs md:text-sm">
+                  Lorem ipsum proin gravida velit auctor sde re sit amet space.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 items-start">
+              <div class="w-10 h-8">
+                <img src="./images/icon5.png" alt="" class="w-full h-full" />
+              </div>
+              <div>
+                <p class="text-sm md:text-base font-light font-[Marcellus]">
+                  Wifi & Internet
+                </p>
+                <p class="font-light text-xs md:text-sm">
+                  Lorem ipsum proin gravida velit auctor sde re sit amet space.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 items-start">
+              <div class="w-10 h-8">
+                <img src="./images/icon4.png" alt="" class="w-full h-full" />
+              </div>
+              <div>
+                <p class="text-sm md:text-base font-light font-[Marcellus]">
+                  Laundry Services
+                </p>
+                <p class="font-light text-xs md:text-sm">
+                  Lorem ipsum proin gravida velit auctor sde re sit amet space.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 items-start">
+              <div class="w-10 h-8">
+                <img src="./images/icon3.png" alt="" class="w-full h-full" />
+              </div>
+              <div>
+                <p class="text-sm md:text-base font-light font-[Marcellus]">
+                  Breakfast in Bed
+                </p>
+                <p class="font-light text-xs md:text-sm">
+                  Lorem ipsum proin gravida velit auctor sde re sit amet space.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-3 items-start">
+              <div class="w-10 h-8">
+                <img src="./images/icon2.png" alt="" class="w-full h-full" />
+              </div>
+              <div>
+                <p class="text-sm md:text-base font-light font-[Marcellus]">
+                  Swimming Pool
+                </p>
+                <p class="font-light text-xs md:text-sm">
+                  Lorem ipsum proin gravida velit auctor sde re sit amet space.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex">
+          <div class="w-full h-87.5 px-2 serviceImageWrapperOne">
+            <div class="w-full h-80 cursor-pointer serviceImageOne">
+              <img src="./images/cardImg5.png" alt="" class="w-full h-full" />
+            </div>
+          </div>
+          <div
+            class="w-full h-80 px-2 flex justify-center items-center serviceImageWrapperTwo"
+          >
+            <div class="w-full h-75 cursor-pointer serviceImageTwo">
+              <img src="./images/cardImg6.png" alt="" class="w-full h-full" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#F1EBE3] py-14 relative">
+        <div class="flex flex-col pb-10 px-3">
+          <p
+            class="font-medium text-[10px] sm:text-xs md:text-sm text-[#B99D75] mb-3"
+          >
+            Discover Our Accommodations
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-between items-start sm:items-end"
+          >
+            <p
+              class="uppercase text-base sm:text-xl md:text-3xl font-[Marcellus] font-light"
+            >
+              Rooms. Suites. Ville
+            </p>
+            <div class="flex items-center gap-3">
+              <p
+                class="uppercase text-xs sm:text-base md:text-xl font-[Marcellus] font-light"
+              >
+                Explore All Accommodations
+              </p>
+              <div class="w-10 sm:w-15 h-px bg-black"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full h-87.5 flex justify-between items-center pb-10 relative gap-3 roomGridCard"
+        >
+          <div
+            class="absolute left-6 bg-white w-9 h-9 rounded-full flex justify-center items-center cursor-pointer"
+          >
+            <img src="./images/prevIcon.png" alt="" class="w-5 h-5" />
+          </div>
+          <div class="w-[27%] h-full cursor-pointer" id="slider">
+            <img src="./images/sliderCard2.png" alt="" class="w-full h-full" />
+          </div>
+          <div
+            class="w-[46%] h-full active relative cursor-pointer"
+            id="slider"
+          >
+            <img src="./images/sliderCard1.png" alt="" class="w-full h-full" />
+            <div
+              class="absolute inset-0 flex flex-col justify-center items-center gap-4 text-white"
+            >
+              <p
+                class="text-sm sm:text-lg md:text-2xl font-[Marcellus] font-light"
+              >
+                Signature Suite
+              </p>
+              <div
+                class="flex flex-wrap justify-between items-center gap-5 px-2"
+              >
+                <div class="flex justify-center items-center gap-1.5">
+                  <div class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer">
+                    <img src="./images/icon7.png" alt="" />
+                  </div>
+                  <p class="text-xs sm:text-sm">60 m2</p>
+                </div>
+                <div class="flex justify-center items-center gap-1.5">
+                  <div class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer">
+                    <img src="./images/icon8.png" alt="" />
+                  </div>
+                  <p class="text-xs sm:text-sm">4 Guests</p>
+                </div>
+                <div class="flex justify-center items-center gap-1.5">
+                  <div class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer">
+                    <img src="./images/icon9.png" alt="" />
+                  </div>
+                  <p class="text-xs sm:text-sm">2 Beds</p>
+                </div>
+                <div class="flex justify-center items-center gap-1.5">
+                  <div class="w-4 h-4 sm:w-6 sm:h-6 cursor-pointer">
+                    <img src="./images/icon10.png" alt="" />
+                  </div>
+                  <p class="text-xs sm:text-sm">1 Bathroom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-[27%] h-full cursor-pointer" id="slider">
+            <img src="./images/sliderCard3.png" alt="" class="w-full h-full" />
+          </div>
+          <div
+            class="absolute right-6 bg-white w-9 h-9 rounded-full flex justify-center items-center cursor-pointer"
+          >
+            <img src="./images/nextIcon.png" alt="" class="w-5 h-5" />
+          </div>
+        </div>
+        <div
+          class="bg-black mt-5 sm:mt-0 absolute left-0 sm:left-16 md:left-20 lg:left-24 w-full sm:w-10/12 m-auto p-4 flex flex-wrap justify-center items-center gap-5"
+        >
+          <div
+            class="flex justify-center items-center gap-5 border border-white text-white p-2 md:p-3"
+          >
+            <p class="text-xs sm:text-sm font-[Marcellus] font-light">
+              Check In
+            </p>
+            <div class="cursor-pointer flex items-center justify-center gap-2">
+              <p class="text-[10px] sm:text-xs">2026-02-17</p>
+              <img src="./images/Vector.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center gap-5 border border-white text-white p-2 md:p-3"
+          >
+            <p class="text-xs sm:text-sm font-[Marcellus] font-light">
+              Check Out
+            </p>
+            <div class="cursor-pointer flex items-center justify-center gap-2">
+              <p class="text-[10px] sm:text-xs">2026-02-18</p>
+              <img src="./images/Vector.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center gap-5 border border-white text-white p-2 md:p-3"
+          >
+            <p class="text-xs sm:text-sm font-[Marcellus] font-light">Room</p>
+            <div class="cursor-pointer flex items-center justify-center gap-2">
+              <p class="text-[10px] sm:text-xs">1 Room</p>
+              <img src="./images/Vector.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="flex justify-center items-center gap-5 border border-white text-white p-2 md:p-3"
+          >
+            <p class="text-xs sm:text-sm font-[Marcellus] font-light">Guests</p>
+            <div class="cursor-pointer flex items-center justify-center gap-2">
+              <p class="text-[10px] sm:text-xs">1 Adult, 0 Children</p>
+              <img src="./images/Vector.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="bg-[#B99D75] w-28 h-8 sm:w-32 sm:h-10 md:w-40 md:h-12 text-white flex justify-center items-center cursor-pointer"
+          >
+            <button
+              class="text-[10px] sm:text-xs md:text-sm font-[Marcellus] font-light"
+            >
+              Check Availability
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="text-center pt-24 advantageContainer">
+        <p
+          class="font-medium text-[10px] sm:text-xs md:text-sm text-[#B99D75] mb-3 uppercase"
+        >
+          Local Activities & Events
+        </p>
+        <p
+          class="uppercase text-base sm:text-xl md:text-3xl font-[Marcellus] font-light"
+        >
+          Immerse yourself in a diverse mountain resort life
+        </p>
+        <div class="max-w-4xl m-auto">
+          <div class="advantageGridCard">
+            <div
+              class="w-full h-137.5 flex justify-center sm:justify-start items-center sm:items-start px-2 sm:pr-5 advantageCardWrapper"
+            >
+              <div class="w-full h-131.25 advantageCard">
+                <div class="w-full h-87.5 cursor-pointer">
+                  <img
+                    src="./images/advantageImg3.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 pt-3">
+                  <p
+                    class="font-[Marcellus] font-light text-sm sm:text-lg md:text-2xl"
+                  >
+                    Spa & Wellness
+                  </p>
+                  <p class="text-[#333632] text-xs md:text-sm">
+                    In the hotel spa center we offer an exceptional well-being
+                    experience combining our expertise, high technology and
+                    breathtaking results.
+                  </p>
+                  <span
+                    class="text-[#1A1B1A] font-[Marcellus] font-light text-xs sm:text-sm underline underline-offset-8 decoration-[#B99D75]"
+                    >Discover More</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full h-137.5 flex justify-center sm:justify-end items-center sm:items-end px-2 advantageCardWrapper"
+            >
+              <div class="w-full h-131.25 advantageCard">
+                <div class="w-full h-87.5 cursor-pointer">
+                  <img
+                    src="./images/advantageImg1.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 pt-3">
+                  <p
+                    class="font-[Marcellus] font-light text-sm sm:text-lg md:text-2xl"
+                  >
+                    Summer Week
+                  </p>
+                  <p class="text-[#333632] text-xs md:text-sm">
+                    The Swiss Alps are spectacular in summer, offering some of
+                    the best scenery in the world for hiking, biking, rafting
+                    and epic drives.
+                  </p>
+                  <span
+                    class="text-[#1A1B1A] font-[Marcellus] font-light text-xs sm:text-sm underline underline-offset-8 decoration-[#B99D75]"
+                    >Discover More</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full h-137.5 flex justify-center sm:justify-start items-center sm:items-start px-2 sm:pl-5 advantageCardWrapper"
+            >
+              <div class="w-full h-131.25 advantageCard">
+                <div class="w-full h-87.5 cursor-pointer">
+                  <img
+                    src="./images/advantageImg2.png"
+                    alt=""
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="flex flex-col gap-2 pt-3">
+                  <p
+                    class="font-[Marcellus] font-light text-sm sm:text-lg md:text-2xl"
+                  >
+                    5-Star Gastronomic
+                  </p>
+                  <p class="text-[#333632] text-xs md:text-sm">
+                    Extraordinary moments and special occasions are precious.
+                    Enjoy a premium suite and dinner for two as well as spa
+                    credits with this special offer.
+                  </p>
+                  <span
+                    class="text-[#1A1B1A] font-[Marcellus] font-light text-xs sm:text-sm underline underline-offset-8 decoration-[#B99D75]"
+                    >Discover More</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="relative w-full h-146.7"
+        style="background-image: url(./images/bannerImg.png)"
+      >
+        <div
+          class="relative z-10 flex flex-col items-center justify-center w-full py-5 h-full text-white px-2"
+        >
+          <div class="w-full sm:w-3/5 text-center">
+            <p
+              class="uppercase font-medium text-xs sm:text-sm mb-4 text-[#B99D75]"
+            >
+              Book Your Stay Now
+            </p>
+
+            <h3
+              class="text-sm sm:text-base md:text-xl lg:text-3xl font-[Marcellus] font-light"
+            >
+              Escape to the beautiful mountains where dreams come true. Immerse
+              yourself in the restorative qualities of nature, far from the
+              disturbances of everyday life.
+            </h3>
+          </div>
+          <div
+            class="mt-12 w-full max-w-4xl p-6 rounded-xl flex flex-wrap items-start justify-between gap-6"
+          >
+            <div class="flex gap-2 items-center">
+              <div class="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer">
+                <img src="./images/Vector (1).png" alt="" />
+              </div>
+              <div class="text-white">
+                <p class="text-xs sm:text-sm font-light">Check In</p>
+                <p class="text-[10px] sm:text-xs font-light">2026-02-17</p>
+              </div>
+            </div>
+
+            <div class="hidden md:block h-10 w-px bg-[#B99D75]"></div>
+
+            <div class="flex gap-2 items-center">
+              <div class="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer">
+                <img src="./images/Vector (1).png" alt="" />
+              </div>
+              <div class="text-white">
+                <p class="text-xs sm:text-sm font-light">Check Out</p>
+                <p class="text-[10px] sm:text-xs font-light">2026-02-18</p>
+              </div>
+            </div>
+
+            <div class="hidden md:block h-10 w-px bg-[#B99D75]"></div>
+
+            <div class="flex gap-2 items-center">
+              <div class="w-4 h-4 sm:w-5 sm:h-5 cursor-pointer">
+                <img src="./images/Component 18.png" alt="" />
+              </div>
+              <div class="text-white">
+                <p class="text-xs sm:text-sm font-light">Guests</p>
+                <p class="text-[10px] sm:text-xs font-light">
+                  1 Room, 1 Adult, 0 Children
+                </p>
+              </div>
+            </div>
+
+            <div class="w-28 h-8 sm:w-32 sm:h-10 md:w-40 md:h-12">
+              <button
+                class="bg-[#B99D75] cursor-pointer border-none px-2 text-[10px] sm:text-xs md:text-sm py-3 w-full text-white"
+              >
+                Check Availability
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-[#111111] text-white py-10 sm:py-14 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12"
+      >
+        <div>
+          <h2
+            class="font-light font-[Marcellus] text-base sm:text-xl md:text-3xl uppercase text-white mb-6"
+          >
+            COZYSTAY
+          </h2>
+
+          <p class="text-[10px] sm:text-xs md:text-sm mb-6">
+            Established in 1998, CozyStay Hotel is a boutique hotel in the heart
+            of the Swiss Alps, offering contemporary accommodation and unrivaled
+            access to ski and hiking trails, immersing you in an idyllic setting
+            against pristine skies in search of a truly serene experience.
+          </p>
+
+          <div class="flex space-x-4">
+            <div class="w-6 h-6 cursor-pointer">
+              <img src="./images/footerIcon1.png" alt="" />
+            </div>
+            <div class="w-6 h-6 cursor-pointer">
+              <img src="./images/footerIcon2.png" alt="" />
+            </div>
+            <div class="w-6 h-6 cursor-pointer">
+              <img src="./images/footerIcon3.png" alt="" />
+            </div>
+            <div class="w-6 h-6 cursor-pointer">
+              <img src="./images/footerIcon4.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3
+            class="font-light font-[Marcellus] text-base sm:text-lg md:text-xl text-white mb-6"
+          >
+            Reach Out
+          </h3>
+          <ul class="space-y-3 text-xs sm:text-sm">
+            <li>Email: booking@cozystay.com</li>
+            <li>Tel: +41 22 345 66 77</li>
+            <li>Fax: +41 22 345 77 89</li>
+            <li>Rue de Lausanne, 1202 Geneva, Switzerland</li>
+          </ul>
+
+          <button
+            class="cursor-pointer mt-6 text-sm font-light font-[Marcellus] uppercase border-b border-[#B99D75]"
+          >
+            Get Directions
+          </button>
+        </div>
+
+        <div>
+          <h3
+            class="font-light font-[Marcellus] text-base sm:text-lg md:text-xl text-white mb-6"
+          >
+            Sign up for newsletter
+          </h3>
+
+          <div class="flex items-center border-b border-gray-500 pb-2 mb-4">
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              class="bg-transparent outline-none w-full text-xs sm:text-sm placeholder-gray-400"
+            />
+            <button
+              class="text-xs sm:text-sm text-white flex gap-2 justify-center items-center cursor-pointer"
+            >
+              Subscribe
+              <img src="./images/Symbol.png" alt="" class="w-3.5 h-3.5" />
+            </button>
+          </div>
+
+          <div class="flex items-center space-x-2 text-xs sm:text-sm mb-6">
+            <input type="checkbox" class="text-white" />
+            <span>I agree to the Privacy Policy</span>
+          </div>
+
+          <div class="flex gap-3 items-center justify-start">
+            <p class="mb-3 text-xs sm:text-sm">Stay Connected:</p>
+            <div class="flex gap-1 items-center justify-center">
+              <div class="w-6 h-6 cursor-pointer">
+                <img src="./images/Text.png" alt="" />
+              </div>
+              <div class="w-6 h-6 cursor-pointer">
+                <img src="./images/Text (1).png" alt="" />
+              </div>
+              <div class="w-6 h-6 cursor-pointer">
+                <img src="./images/Text (2).png" alt="" />
+              </div>
+              <div class="w-6 h-6 cursor-pointer">
+                <img src="./images/Text (3).png" alt="" />
+              </div>
+              <div class="w-6 h-6 cursor-pointer">
+                <img src="./images/Component 20.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-gray-700 mt-12 pt-6 text-sm text-white flex flex-col gap-3 sm:flex-row justify-between items-center"
+      >
+        <div
+          class="font-light font-[Marcellus] text-xs sm:text-sm md:text-base flex gap-4 uppercase"
+        >
+          <p>Privacy</p>
+          <p>Terms of Use</p>
+          <p>Policy</p>
+        </div>
+        <p class="text-xs sm:text-sm">© 2026 CozyStay. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

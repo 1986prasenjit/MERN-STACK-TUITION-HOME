@@ -1,0 +1,118 @@
+li{
+    list-style: none;
+}
+
+.active{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+.cardGridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 30px 10px;
+    row-gap: 10px;
+}
+.advantageGridCard{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    padding: 30px 10px;
+    row-gap: 10px;
+}
+
+.placesBox, .stayBox, .dineBox, .playBox{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
+.placeDiv:hover .placesBox{
+    opacity: 1;
+    visibility: visible;
+}
+
+.stayDiv:hover .stayBox{
+    opacity: 1;
+    visibility: visible;
+}
+
+.dineDiv:hover .dineBox{
+    opacity: 1;
+    visibility: visible;
+}
+
+.playDiv:hover .playBox{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width:800px) {
+    .serviceGridContainer{
+         display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    }
+     .roomGridCard{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #slider{
+        max-width: 100%;
+        width: 100%;
+        height: 300px;
+    }
+    #slider:nth-last-child(2){
+        display: none;
+    }
+}
+@media (max-width:480px) {
+    .advantageContainer{
+        padding-top: 150px;
+    }
+}
+
+@media (max-width:460px) {
+    .advantageCardWrapper{
+        height: 485px;
+    }
+    .advantageCard{
+        height: 460px;
+    }
+}
+
+@media (max-width:410px) {
+    .serviceTextGridContainer{
+         display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    }
+    .serviceImageWrapperOne{
+        height: 280px;
+    }
+    .serviceImageOne{
+        height: 250px;
+    }
+    .serviceImageWrapperTwo{
+        height: 250px;
+    }
+    .serviceImageTwo{
+        height: 230px;
+    }
+      #slider:nth-child(3){
+        display: none;
+    }
+    .roomGridCard{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 250px;
+    }
+    #slider{
+        height: 250px;
+    }
+}
+
+@media (max-width:330px) {
+    .advantageContainer{
+        padding-top: 250px;
+    }
+}

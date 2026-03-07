@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TODO In JS</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="mainBox">
-      <div class="todoContents">
-        <div>
-          <input
-            type="text"
-            placeholder="Enter Your Task Here"
-            id="inputElem"
-          />
-          <button id="addBtn">Add Task</button>
-        </div>
-        <div>
-          <ul id="taskList"></ul>
-        </div>
+<html lang="en" xml:lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Todo List</title>
+</head>
+<body>
+  <div class="container">
+    <div class="input-container">
+        <input type="text" name="" id="todoInput" placeholder="Enter Your Task"
+          class="outline-none w-full p-2 border-2 border-white">
+        <button id="addTaskBtn">Add Todo</button>
       </div>
+      <ul id="todoList"></ul>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="scriptTest.js"></script>
+</body>
+
 </html>

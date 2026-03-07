@@ -1,45 +1,58 @@
-const inputElem = document.getElementById("inputElem");
-const addBtn = document.getElementById("addBtn");
-const taskList = document.getElementById("taskList");
+document.addEventListener("DOMContentLoaded", function () {
+  let todoInput = document.getElementById("todoInput");
+  let addTaskBtn = document.getElementById("addTaskBtn");
+  let todoList = document.getElementById("todoList");
 
-addBtn.addEventListener("click", function () {
-  if (inputElem.value.trim() === "") return;
+  let todoArray = JSON.parse(localStorage.getItem("tasks")) || [];
 
-  const todoContent = {
-    id: Date.now(),
-    text: inputElem.value,
-    completed: false,
-  };
+  todoArray.forEach((task) => renderTask(task));
 
-  const liElem = document.createElement("li");
-  liElem.id = todoContent.id;
-  liElem.classList.add("task-item");
+  function addTask() {
+    let newTask = todoInput.value.trim();
+    if(newTask === "") return;
 
-  liElem.innerHTML = `
-    <div class="todoEditText">
-        <input type="checkbox" class="checkbox" />
-        <span class="todo-text">${todoContent.text}</span>
-    </div>
-    <div class="btnContainer">
-        <button class="deleteBtn">Delete</button>
-        <button class="editBtn">Edit</button>
-    </div>
-  `;
+    let inputValue = {
+      id: new Date(),
+      text: newTask,
+      completed: false,
+    };
 
-  const checkbox = liElem.querySelector(".checkbox");
-  const todoText = liElem.querySelector(".todo-text");
-  const deleteBtn = liElem.querySelector(".deleteBtn");
+    todoArray.push(inputValue);
+    saveTaskToLocal();
+    renderTask(inputValue);
+    todoInput.value = "";
+    console.log(todoArray);
+  }
+  addTaskBtn.addEventListener("click", addTask);
 
+  todoInput.addEventListener("keydown", (e)=> {
+      if(e.key === "Enter"){
+        addTask();
+      }
+  })
+  function renderTask(task) {
+    let li = document.createElement("li");
+    li.setAttribute("dataID", task.id);
+    li.innerHTML = `
+      <span>${task.text}</span>
+      <button>Delete</button>
+    `;
+    li.addEventListener("click", (e) => {
+      if (e.target.tagName === "BUTTON") return;
+      li.completed = !li.completed;
+      li.classList.toggle("completed");
+      saveTaskToLocal();
+    });
 
-  checkbox.addEventListener("change", function () {
-    todoContent.completed = checkbox.checked;
-    todoText.classList.toggle("strikeThrough", todoContent.completed);
-  });
-
-  deleteBtn.addEventListener("click", function () {
-    liElem.remove();
-  });
-
-  taskList.appendChild(liElem);
-  inputElem.value = "";
+    li.querySelector("button").addEventListener("click", (e) => {
+      e.stopPropagation();
+      todoArray = todoArray.filter((tsk) => tsk.id !== task.id);
+      li.remove();
+      saveTaskToLocal();
+    });
+    todoList.appendChild(li);
+  }
+  function saveTaskToLocal() {
+    localStorage.setItem("tasks", JSON.stringify(todoArray));
+  }
 });
